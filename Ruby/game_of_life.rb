@@ -40,12 +40,14 @@ def print_grid(board)
     end
 end
 
-state = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
-print("Number of rounds: \n")
-rounds = gets 
+def init_setup()
+    state = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
+    print("Number of rounds: \n")
+    rounds = gets 
 
-for each in (0...rounds.to_i)
-    print("\nIteration number - #{each}\n")
-    state = game_of_life(state)
-    print_grid(state)
+    for each in (0...rounds.to_i)
+        print("\nIteration number - #{each}\n")
+        state = game_of_life(state)
+        print_grid(state)
+    end
 end
