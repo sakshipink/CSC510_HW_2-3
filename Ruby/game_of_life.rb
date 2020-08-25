@@ -1,7 +1,7 @@
 # @param {Integer[][]} board
 # @return {Void} Do not return anything, modify board in-place instead.
 def game_of_life(board)
-    neighbors = [[1,0], [1,-1], [0,-1], [-1,-1], [-1,0], [-1,1], [0,1], [1,1]]
+    neighbors = [[1,0], [1,-1], [0,-1], [-1,-1], [0,0], [-1,0], [-1,1], [0,1], [1,1]]
     row_length = board.length
     col_length = board[0].length
     for row in (0...row_length)
@@ -10,15 +10,15 @@ def game_of_life(board)
             for neighbor in neighbors
                 r = row + neighbor[0]
                 c = col + neighbor[1]
-                if (r < row_length and r >= 0) and (c < col_length and c >= 0) and (board[r][c]).abs == 1
+                if (r < row_length and r > 0) and (c < col_length and c > 0) and (board[r][c]).abs == 1
                     live_neighbors += 1
                 end
             end
             if board[row][col] == 1 && (live_neighbors < 2 || live_neighbors > 3)
-                board[row][col] = -1 
+                board[row][col] = 2 
             end
             if board[row][col] == 0 && live_neighbors == 3
-                board[row][col] = 2
+                board[row][col] = -1
             end
         end
     end
@@ -30,7 +30,6 @@ def game_of_life(board)
                 board[row][col] = 0
             end
         end
-    end
     return board
 end
 
