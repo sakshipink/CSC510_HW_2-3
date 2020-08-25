@@ -14,8 +14,8 @@ func gameOfLife(board [][]int) [][]int {
 	// 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 	
     var neighbors [][]int = [][]int{{-1, -1}, {-1, 0}, {-1, 1},
-									{0, -1}, {0, 0}, {0, 1},
-									{1, -1}, {1, 0}, {1, 1},}
+				{0, -1}, {0, 0}, {0, 1},
+				{1, -1}, {1, 0}, {1, 1},}
         
 	for row:= 0; row< len(board); row++ {
 		for col:= 0; col< len(board[0]); col++{
