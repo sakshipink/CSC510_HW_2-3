@@ -14,3 +14,9 @@ NOTE: **Below is just an idea of how we can go about - any suggestions are appre
   - Actively monitor the volunteers for time taken to debug each bug and classify the ease of debugging syntactical and logical errors in different languages
 - Have a post survey with each volunteer about the test experience.
 - We as the people conducting experiements need to agree on "tags/categories" to put the behavior of our subjects into and have separate google sheet to write this out as well. 
+
+
+## Repl links:
+  - Ruby : https://repl.it/join/caeojryi-dhanrajraghunat
+  - Go : 
+  - TCL : 
