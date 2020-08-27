@@ -1,4 +1,6 @@
 # Software Engineering Homework 2 & 3
+[![DOI](https://zenodo.org/badge/289961504.svg)](https://zenodo.org/badge/latestdoi/289961504)
+
 
 ## Experimentation setup 
 
