@@ -22,5 +22,5 @@ NOTE: **Below is just an idea of how we can go about - any suggestions are appre
   - TCL : 
 
 ## Survey Links: 
-  - Initial Survey: https://docs.google.com/forms/d/e/1FAIpQLScM3CTxS5b707sBqsoVkl52pY-AYcThBgr37Q0SLIptzHlkTg/viewform?usp=sf_link
+  - Initial Survey: https://docs.google.com/forms/d/e/1FAIpQLSfymLBTOD1ubXjkKeXgVS6CBT2cXCHx2VBMEugiz02n7MLKjg/viewform?usp=sf_link
   - Post experiment survey: https://docs.google.com/forms/d/e/1FAIpQLScM3CTxS5b707sBqsoVkl52pY-AYcThBgr37Q0SLIptzHlkTg/viewform?usp=sf_link
