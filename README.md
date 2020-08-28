@@ -18,7 +18,7 @@ NOTE: **Below is just an idea of how we can go about - any suggestions are appre
 
 ## Repl links:
   - Ruby : https://repl.it/join/caeojryi-dhanrajraghunat
-  - Go : 
+  - Go : https://repl.it/join/wapasawa-dhanrajraghunat
   - TCL : 
 
 ## Survey Links: 
