@@ -21,15 +21,15 @@ func gameOfLife(board [][]int) [][]int {
 		for col:= 0; col< len(board[0]); col++{
 			live_neighbors := 0
 			for _, neighbor := range neighbors{
-				r := row + neighbor[0]
-				c := col + neighbor[1]
+				r := row + neighbor[1]
+				c := col + neighbor[0]
 				
-				if (r < len(board) && r >=0) && (c < len(board[0]) && c >=0) && Abs(board[r][c]) == 1{
+				if (r < len(board) && r >0) && (c < len(board[0]) && c >=0) && Abs(board[r][c]) == 1{
 					live_neighbors += 1
 				}
 				
 			}
-			if board[row][col] == 1 && (live_neighbors < 2 || live_neighbors >3){
+			if board[row][col] == 1 && (live_neighbors < 2 | live_neighbors >3){
 				board[row][col] = -1
 			}
 			if board[row][col] == 0 && (live_neighbors == 3){
@@ -46,7 +46,7 @@ func gameOfLife(board [][]int) [][]int {
             }
 	}
   }
-	return board
+	return
 }
 
 func Abs(x int) int {
