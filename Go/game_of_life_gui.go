@@ -28,15 +28,15 @@ func (g *Game) Update(screen *ebiten.Image) error {
 		for col:= 0; col< HEIGHT; col++{
 			live_neighbors := 0
 			for _, neighbor := range neighbors{
-				r := row + neighbor[0]
-				c := col + neighbor[1]
+				r := row + neighbor[1]
+				c := col + neighbor[0]
 				
-				if (r < len(grid) && r >= 0) && (c < len(grid[0]) && c >= 0) && Abs(grid[r][c]) == 1{
+				if (r < len(grid) && r > 0) && (c < len(grid[0]) && c >= 0) && Abs(grid[r][c]) == 1{
 					live_neighbors += 1
 				}
 				
 			}
-			if grid[row][col] == 1 && (live_neighbors < 2 || live_neighbors >3){
+			if grid[row][col] == 1 && (live_neighbors < 2 | live_neighbors >3){
 				grid[row][col] = -1
 			}
 			if grid[row][col] == 0 && (live_neighbors == 3){
@@ -53,7 +53,7 @@ func (g *Game) Update(screen *ebiten.Image) error {
             }
         }
 	}
-	return nil
+	return
 }
 
 func Abs(x int) int {
