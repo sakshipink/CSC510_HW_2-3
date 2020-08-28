@@ -17,8 +17,8 @@ NOTE: **Below is just an idea of how we can go about - any suggestions are appre
 
 
 ## Repl links:
-  - Ruby : https://repl.it/join/caeojryi-dhanrajraghunat
-  - Go : https://repl.it/join/wapasawa-dhanrajraghunat
+  - Ruby : https://repl.it/join/caeojryi-dhanrajraghunat [Command to run the test - `irb test_game_of_life.rb`]
+  - Go : https://repl.it/join/wapasawa-dhanrajraghunat [ Command to run the test - `go test main_test.go main.go`]
   - TCL : 
 
 ## Survey Links: 
