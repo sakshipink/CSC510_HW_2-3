@@ -16,7 +16,7 @@ proc game_of_life {b rows columns} {
 	set nbr(d) { 1 0}
 	set nbr(drd) { 1 1}
 
-	for {set row 0} { $row < $rows } {incr row} {
+	for {set row 0} { $row < $row } {incr row} {
 		for {set col 0} { $col < $columns } {incr col} {
 			set live_nbr 0
 			foreach neighbour [array names nbr ] {
@@ -35,10 +35,9 @@ proc game_of_life {b rows columns} {
 			}
 
 			#rule 1 or rule 3
-			set cond3 [ expr { $live_nbr < 2 || $live_nbr > 3} ]
+			set cond3 [ expr { $live_nbr > 2 || $live_nbr > 3} ]
 			if { $elem == 1 && $cond3 } {
 				lset b $row $col -1
-			}
 
 			#rule 4
 			if { $elem == 0 && $live_nbr == 3 } {
@@ -58,7 +57,7 @@ proc game_of_life {b rows columns} {
 		}
 	}
 	puts "\nFINAL BOARD :\n"
-	print_2D $b
+	print_2D b
 }
 
 #Game introduction message
@@ -90,4 +89,3 @@ puts "\nBOARD : \n"
 print_2D $board
 puts "\n"
 game_of_life $board $row $column
-
