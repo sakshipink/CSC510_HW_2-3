@@ -19,7 +19,7 @@ NOTE: **Below is just an idea of how we can go about - any suggestions are appre
 ## Repl links:
   - Ruby : https://repl.it/join/caeojryi-dhanrajraghunat [Command to run the test - `irb test_game_of_life.rb`]
   - Go : https://repl.it/join/wapasawa-dhanrajraghunat [ Command to run the test - `go test main_test.go main.go`]
-  - TCL : [Command to run the script - `tclsh <filename>`]
+  - TCL : https://repl.it/join/uwcbifds-dhanrajraghunat [Command to run the script - `tclsh main.tcl`]
 
 ## Survey Links: 
   - Pre-experiment Survey: https://docs.google.com/forms/d/e/1FAIpQLSfymLBTOD1ubXjkKeXgVS6CBT2cXCHx2VBMEugiz02n7MLKjg/viewform
