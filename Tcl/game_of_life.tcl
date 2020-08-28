@@ -12,7 +12,6 @@ proc game_of_life {b rows columns} {
 	set nbr(dru) { -1 1}
 	set nbr(l) { 0 -1}
 	set nbr(r) { 0 1}
-	set nbr(s) { 0 0}
 	set nbr(dld) { 1 -1}
 	set nbr(d) { 1 0}
 	set nbr(drd) { 1 1}
@@ -28,8 +27,8 @@ proc game_of_life {b rows columns} {
 				set nelem [lindex [lindex $b $r] $c ]
 				set elem [lindex [lindex $b $row] $col ]
 
-				set cond1 [ expr { $r < $rows  && $r > 0 } ]
-				set cond2 [ expr { $c < $columns && $c > 0 } ]
+				set cond1 [ expr { $r < $rows  && $r >= 0 } ]
+				set cond2 [ expr { $c < $columns && $c >= 0 } ]
 				if { $cond1 && $cond2 && abs($nelem) == 1 } {
 					incr live_nbr
 				}
@@ -38,12 +37,12 @@ proc game_of_life {b rows columns} {
 			#rule 1 or rule 3
 			set cond3 [ expr { $live_nbr < 2 || $live_nbr > 3} ]
 			if { $elem == 1 && $cond3 } {
-				lset b $row $col 2
+				lset b $row $col -1
 			}
 
 			#rule 4
 			if { $elem == 0 && $live_nbr == 3 } {
-				lset b $row $col -1 
+				lset b $row $col 2 
 			}
 		}
 	}
@@ -56,6 +55,7 @@ proc game_of_life {b rows columns} {
 			} else {
 				lset b $row $col 0
 			}
+		}
 	}
 	puts "\nFINAL BOARD :\n"
 	print_2D $b
