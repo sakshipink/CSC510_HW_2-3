@@ -18,12 +18,15 @@ TCL : https://repl.it/join/uwcbifds-dhanrajraghunat
 
 ## Observations
 
-<img src="img1.jpeg">
-<img src="img2.jpeg">
-<img src="img3.jpeg">
-<img src="img4.jpeg">
-<img src="avg_time.jpg">
-<img src="debug.png">
+<p align="center">
+	<img src="img1.jpeg">
+	<img src="img2.jpeg">
+	<img src="img3.jpeg">
+	<img src="img4.jpeg">
+	<img src="avg_time.jpg">
+	<img src="debug.png">
+</p>
+
 
 - We noticed that on average people took around 6.42 minutes for debugging the logical and syntax errors in Go language, while it took 6.42 minutes for debugging Ruby and 8.71 minutes for Tcl. 
 - From the pre experimental survey, the number of people who knew (or were more comfortable with ) the language are as follows:
